@@ -1,0 +1,7 @@
+[project]
+name = "cancer-segmentation"
+version = "0.1.0"
+description = "Segmentation models for cancer cells"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
