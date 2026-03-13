@@ -10,7 +10,7 @@ def test_version_matches_pyproject() -> None:
     pkg = importlib.import_module("cancer-segmentation")
 
     pyproject_path = Path(__file__).resolve().parent.parent / "pyproject.toml"
-    with open(pyproject_path, "rb") as f:
+    with Path(pyproject_path, "rb").open() as f:
         pyproject = tomllib.load(f)
 
     pyproject_version = pyproject["project"]["version"]
